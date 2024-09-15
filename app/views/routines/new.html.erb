@@ -1,6 +1,6 @@
 <h1>ルーティン投稿ページ</h1>
-
 <%= form_with model: @routine do |f| %>
+  <%= render 'shared/error_message', object: f.object %>
   <div class="mb-3">
     <%= f.label :title %>
     <%= f.text_field :title, class: 'form-control' %>
