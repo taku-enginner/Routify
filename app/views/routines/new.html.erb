@@ -1,0 +1,16 @@
+<h1>ルーティン投稿ページ</h1>
+
+<%= form_with model: @routine do |f| %>
+  <div class="mb-3">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :content %>
+    <%= f.text_area :body, class: 'form-control', rows: 5 %>
+  </div>
+
+  <%= f.submit class: 'btn btn-primary'  %>
+<% end %>
+<%= link_to "戻る", root_path %>
+
